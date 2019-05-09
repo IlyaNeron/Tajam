@@ -1,0 +1,54 @@
+.head-block {
+  text-align: center;
+  margin: 0 auto 55px;
+  font-family: $second-font-sans-serif;
+  position: relative;
+  max-width: 400px;
+  padding: 0 0 18px;
+  color: $dark;
+
+  h2 {
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #c6c4c9;
+  }
+
+  &-white {
+    color: $white;
+    margin: 0 auto 48px;
+
+    h2 {
+      color: $white;
+    }
+
+    &:after {
+      background: $dark-gray;
+    }
+  }
+}
+
+@include media('<tablet') {
+  .head-block {
+    margin: 0 auto 30px;
+  }
+}
+
+
+@include media('<phone') {
+  .head-block {
+    margin: 0 auto 25px;
+  }
+}

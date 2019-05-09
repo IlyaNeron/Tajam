@@ -1,0 +1,15 @@
+.logo-block {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin: 0 0 45px;
+  padding: 0 37px;
+  justify-content: center;
+}
+
+@include media('<phone') {
+  .logo-block {
+    margin: 0 0 30px;
+    padding: 0 15px;
+  }
+}

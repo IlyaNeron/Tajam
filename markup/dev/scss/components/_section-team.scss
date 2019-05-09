@@ -1,0 +1,41 @@
+.section-team {
+  padding: 67px 0 69px;
+
+  .row {
+    margin: 0 -10px;
+
+    .col-sm {
+      padding: 0 10px;
+    }
+  }
+}
+
+@include media('<tablet') {
+  .section-team {
+    padding: 50px 0;
+  }
+}
+
+@include media('<phone') {
+  .section-team {
+
+    .row {
+
+      .col-sm {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include media('<xs-phone') {
+  .section-team {
+
+    .row {
+
+      .col-sm {
+        width: 100%;
+      }
+    }
+  }
+}

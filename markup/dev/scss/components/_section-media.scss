@@ -1,0 +1,23 @@
+.section-media {
+  display: flex;
+  align-items: center;
+  padding-top: 28.9%;
+}
+
+@include media('<desktop') {
+  .section-media {
+    padding-top: 45%;
+  }
+}
+
+@include media('<tablet') {
+  .section-media {
+    padding-top: 55%;
+  }
+}
+
+@include media('<xs-phone') {
+  .section-media {
+    padding-top: 75%;
+  }
+}

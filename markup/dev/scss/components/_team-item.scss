@@ -1,0 +1,23 @@
+.team-item {
+  text-align: center;
+  margin: 0 0 66px;
+
+  .image-block {
+    background: $white;
+
+    img {
+      min-height: 230px;
+    }
+  }
+
+  .description-block {
+    border: 1px solid $dark-gray;
+    padding: 19px 15px 20px;
+  }
+}
+
+@include media('<tablet') {
+  .team-item {
+    margin: 0 0 40px;
+  }
+}

@@ -1,0 +1,57 @@
+.row {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+  padding: 0 15px;
+
+  &-sm {
+    width: (100%/4);
+  }
+
+  &-md {
+    width: (100%/3);
+  }
+
+  &-lg {
+    width: (100%/2);
+  }
+}
+
+.input-row {
+
+  &:not(:last-child) {
+    margin: 0 0 22px;
+  }
+}
+
+@include media('<tablet') {
+  .col {
+    &-sm {
+      width: (100%/2);
+    }
+
+    &-md {
+      width: (100%/2);
+    }
+
+    &-md-100 {
+      width: 100%;
+    }
+  }
+}
+
+@include media('<phone') {
+  .col {
+    &-sm {
+      width: 100%;
+    }
+
+    &-md {
+      width: 100%;
+    }
+  }
+}

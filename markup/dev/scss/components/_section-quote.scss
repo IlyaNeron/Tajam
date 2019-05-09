@@ -1,0 +1,15 @@
+.section-quote {
+  padding: 68px 0 69px;
+}
+
+@include media('<tablet') {
+  .section-quote {
+    padding: 50px 0;
+  }
+}
+
+@include media('<phone') {
+  .section-quote {
+    padding: 40px 0;
+  }
+}

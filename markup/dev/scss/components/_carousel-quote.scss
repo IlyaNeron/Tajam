@@ -1,0 +1,68 @@
+.carousel-quote {
+  &-top {
+    max-width: 775px;
+    margin: 0 auto;
+  }
+
+  &-bottom {
+    position: relative;
+    max-width: 305px;
+    margin: 0 auto;
+    .slides-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .arrow-left, .arrow-right {
+      font-size: 25px;
+      color: #9f9f9f;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      @include animate(color);
+
+      &:hover {
+        color: $skyblue;
+      }
+    }
+
+    .arrow-left {
+      left: -50px;
+    }
+
+    .arrow-right {
+      right: -50px;
+    }
+
+    .slide {
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+@include media('<phone') {
+  .carousel-quote {
+    &-bottom {
+      .slide:first-child, .slide:last-child {
+        display: none;
+      }
+
+      .arrow-left {
+        left: 10px;
+      }
+
+      .arrow-right {
+        right: 10px;
+      }
+
+      .slide:nth-child(4n) {
+        margin: 0;
+      }
+    }
+  }
+}

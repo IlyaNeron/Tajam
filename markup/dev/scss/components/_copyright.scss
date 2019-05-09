@@ -1,0 +1,9 @@
+.copyright {
+  margin-left: 15px;
+}
+
+@include media('<phone') {
+  .copyright {
+    margin: 0;
+  }
+}

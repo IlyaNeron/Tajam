@@ -1,0 +1,39 @@
+.carousel-info {
+  .swiper-wrapper {
+    margin: 0 0 144px;
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+
+    &-bullet {
+      background: transparent;
+      outline: none;
+      border: 1px solid $white;
+      width: 10px;
+      height: 10px;
+      margin: 0 3px !important;
+
+      &-active {
+        background: $skyblue;
+        border-color: $skyblue;
+      }
+    }
+  }
+}
+
+@include media('<desktop'){
+  .carousel-info {
+    .swiper-wrapper {
+      margin: 0 0 100px;
+    }
+  }
+}
+
+@include media('<phone'){
+  .carousel-info {
+    .swiper-wrapper {
+      margin: 0 0 60px;
+    }
+  }
+}

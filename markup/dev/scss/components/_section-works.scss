@@ -1,0 +1,15 @@
+.section-works {
+  padding: 64px 0 71px;
+}
+
+@include media('<tablet') {
+  .section-works {
+    padding: 50px 0;
+  }
+}
+
+@include media('<phone') {
+  .section-works {
+    padding: 40px 0;
+  }
+}

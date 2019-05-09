@@ -1,0 +1,15 @@
+.section-story {
+  padding: 65px 0 41px;
+}
+
+@include media('<tablet'){
+  .section-story {
+    padding: 60px 0 30px;
+  }
+}
+
+@include media('<phone'){
+  .section-story {
+    padding: 40px 0 5px;
+  }
+}

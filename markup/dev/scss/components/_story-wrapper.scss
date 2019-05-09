@@ -1,0 +1,52 @@
+.story-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+  justify-content: center;
+
+  .image-block {
+    width: 41%;
+    padding: 0 15px;
+    text-align: center;
+
+    img {
+      margin-top: 4px;
+      margin-right: 3px;
+    }
+  }
+
+  .description-block {
+    width: 59%;
+    padding: 0 15px;
+    line-height: 1.6;
+
+    h2 {
+      margin: 0 0 20px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 22px;
+      }
+
+      &:nth-child(3n) {
+        margin: 0 0 28px;
+      }
+    }
+  }
+}
+
+@include media('<phone'){
+  .story-wrapper {
+
+    .image-block {
+      width: 100%;
+      margin: 0 -15px 25px;
+    }
+
+    .description-block {
+      width: 100%;
+      margin: 0 -15px 25px;
+    }
+  }
+}

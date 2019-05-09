@@ -1,0 +1,26 @@
+.item-work {
+  display: flex;
+  width: (100%/6);
+
+  img {
+    width: 100%;
+  }
+}
+
+@include media('<tablet') {
+  .item-work {
+    width: (100%/4);
+  }
+}
+
+@include media('<phone') {
+  .item-work {
+    width: (100%/2);
+  }
+}
+
+@include media('<xs-phone') {
+  .item-work {
+    width: 100%;
+  }
+}

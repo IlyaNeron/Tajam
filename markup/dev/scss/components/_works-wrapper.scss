@@ -1,0 +1,14 @@
+.works-wrapper {
+  margin: 0 0 71px;
+}
+
+@include media('<tablet') {
+  .works-wrapper {
+    margin: 0 0 50px;
+  }
+}
+@include media('<phone') {
+  .works-wrapper {
+    margin: 0 0 30px;
+  }
+}

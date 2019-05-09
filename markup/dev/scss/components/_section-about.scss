@@ -1,0 +1,33 @@
+.section-about {
+  padding: 221px 0 64px;
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: 100%;
+  }
+}
+
+@include media('<desktop') {
+  .section-about {
+    padding: 180px 0 60px;
+  }
+}
+
+@include media('<tablet') {
+  .section-about {
+    padding: 150px 0 60px;
+  }
+}
+
+@include media('<phone') {
+  .section-about {
+    padding: 120px 0 60px;
+  }
+}
+
+@include media('<xs-phone') {
+  .section-about {
+    padding: 90px 0 60px;
+  }
+}

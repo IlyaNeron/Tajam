@@ -1,0 +1,34 @@
+.subscribe-form {
+  margin: 0 0 26px;
+  display: flex;
+
+  input {
+    margin-right: 10px;
+    color: $white;
+
+    @include placeholder {
+      opacity: 0.75;
+    }
+
+    &:focus {
+
+      @include placeholder {
+        color: $white;
+      }
+    }
+  }
+
+  button {
+    width: 98px;
+    opacity: .5;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 22px;
+    position: relative;
+
+    i {
+      @include vertical-align-el;
+    }
+  }
+}

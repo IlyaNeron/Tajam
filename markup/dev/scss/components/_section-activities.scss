@@ -1,0 +1,15 @@
+.section-activities {
+  padding: 67px 0 57px;
+}
+
+@include media('<tablet') {
+  .section-activities {
+    padding: 50px 0 30px;
+  }
+}
+
+@include media('<phone') {
+  .section-activities {
+    padding: 30px 0 15px;
+  }
+}

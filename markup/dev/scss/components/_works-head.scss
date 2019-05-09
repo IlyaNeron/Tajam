@@ -1,0 +1,44 @@
+.works-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 67px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .projects-link {
+    padding-right: 20px;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      right: -1px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@include media('<tablet') {
+  .works-head {
+    margin: 0 0 50px;
+  }
+}
+
+@include media('<phone') {
+  .works-head {
+    margin: 0 0 30px;
+  }
+}
+
+@include media('<xs-phone') {
+  .works-head {
+    flex-direction: column;
+
+    h2 {
+      margin: 0 0 20px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.media-block {
+  font-size: 16px;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3px;
+  @include vertical-align-el;
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+
+    i {
+      display: block;
+      font-size: 100px;
+      margin: 0 0 30px;
+    }
+  }
+  
+  span {
+    display: block;
+  }
+}
+
+@include media('<tablet') {
+  .media-block {
+    font-size: 14px;
+
+    a {
+
+      i {
+        font-size: 70px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

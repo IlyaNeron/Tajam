@@ -1,0 +1,59 @@
+.info-block {
+  text-align: center;
+  color: $white;
+  max-width: 780px;
+  position: relative;
+  margin: 0 auto;
+  line-height: 1.7;
+
+  button {
+    min-width: 98px;
+  }
+
+  h1 {
+    margin: 0 0 27px;
+    padding: 0 0 21px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 1px;
+      background-color: $skyblue;
+    }
+  }
+
+  p {
+
+    &:not(:last-child) {
+      margin: 0 0 48px;
+    }
+  }
+}
+
+@include media('<phone'){
+  .info-block {
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}
+
+@include media('<xs-phone'){
+  .info-block {
+    h1 {
+      font-size: 26px;
+    }
+  }
+}
