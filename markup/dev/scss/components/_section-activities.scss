@@ -1,5 +1,9 @@
 .section-activities {
-  padding: 67px 0 57px;
+  padding: 67px 0 59px;
+
+  .row {
+    overflow: hidden;
+  }
 }
 
 @include media('<tablet') {
